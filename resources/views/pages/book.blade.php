@@ -5,7 +5,6 @@
     <div class="container-full">
         <!-- Content Header (Page header) -->
 
-
         <!-- Main content -->
         <section class="content">
             <div class="row">
@@ -36,7 +35,7 @@
                                                 <td>{{ $book->book_id }}</td>
                                                 <td>{{ $book->category }}</td>
                                                 <td>{{ $book->title }}</td>
-                                                <td>{{ $book->price }}</td>
+                                                <td>{{ number_format($book->price, 0, ',', '.') }}</td>
                                                 <td>{{ $book->stock }}</td>
                                                 <td>{{ $book->publisher->name }}</td>
                                                 <td style="display:flex;">
